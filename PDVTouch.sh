@@ -5,6 +5,13 @@ if ! mountpoint -q /media/root/GERSAT3/; then
 fi
 chmod -x /usr/local/bin/igraficaJava
 chmod -x /usr/local/bin/dualmonitor_control-PDVJava
+
+cd /Zanthus/Zeus/pdvJava/GERAL/SINCRO/WEB/moduloPHPPDV/
+rm -rf cmp_error
+sleep 5
+docker start modulophppdv_moduloPHPPDV_1
+sleep 5
+
 nohup recreate-user-rabbitmq.sh &
 /Zanthus/Zeus/pdvJava/pdvJava2 &
 sleep 30
