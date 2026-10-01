@@ -1,0 +1,1 @@
+NOME_DO_SEU_ARQUIVO filter=lfs diff=lfs merge=lfs -text
