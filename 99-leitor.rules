@@ -1,0 +1,3 @@
+# LEITOR DATALOGIC MAGELLAN 3x10i
+ACTION=="add", ATTRS{idVendor}=="05f9", ATTRS{idProduct}=="4002", SYMLINK+="ttyS2"
+ACTION=="remove", ATTRS{idVendor}=="05f9", ATTRS{idProduct}=="4002", SYMLINK-="ttyS2"
