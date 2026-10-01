@@ -1,3 +1,7 @@
 # BALANCA CONFERENCIA TOLEDO
 ACTION=="add", ATTRS{idProduct}=="00c0", ATTRS{idVendor}=="1abd", SYMLINK+="ttyS4"
 ACTION=="remove", ATTRS{idProduct}=="00c0", ATTRS{idVendor}=="1abd", SYMLINK-="ttyS4"
+
+# BALANCA CONFERENCIA TOLEDO 2
+ACTION=="add", ATTRS{idProduct}=="2207", ATTRS{idVendor}=="2aca", SYMLINK+="ttyS4"
+ACTION=="remove", ATTRS{idProduct}=="2207", ATTRS{idVendor}=="2aca", SYMLINK-="ttyS4"
