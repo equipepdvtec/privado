@@ -1,5 +1,0 @@
-# SINALIZADOR SELF PERTO
-SUBSYSTEM=="tty", ACTION=="add", KERNEL=="ttyACM[0-9]*", ATTRS{idVendor}=="1abd", ATTRS{idProduct}=="00e0", SYMLINK+="ttyS5"
-SUBSYSTEM=="tty", ACTION=="remove", KERNEL=="ttyACM[0-9]*", ATTRS{idVendor}=="1abd", ATTRS{idProduct}=="00e0", SYMLINK-="ttyS5"
-ACTION=="add", ATTRS{idVendor}=="1abd", ATTRS{idProduct}=="00e0", SYMLINK+="ttySINAPERTO"
-ACTION=="remove", ATTRS{idVendor}=="1abd", ATTRS{idProduct}=="00e0", SYMLINK-="ttySINAPERTO"
